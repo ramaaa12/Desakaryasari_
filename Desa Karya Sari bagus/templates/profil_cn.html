@@ -1,0 +1,33 @@
+{% extends "base_cn.html" %}
+{% block content %}
+
+<section class="section-title" style="text-align: center; background: white; border-radius: 20px; padding: 30px; margin-bottom: 40px; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
+  <h2>Karya Sari 村简介</h2>
+  <p>在一个可持续发展的旅游村庄中，探索文化与自然的原始魅力。</p>
+</section>
+
+<section class="profil-section" style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; margin-bottom: 40px; background: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px; cursor:pointer;" onclick="window.location.href='/tentang_desa_cn'">
+  <div class="profil-text" style="flex: 1 1 400px; max-width: 600px; text-align: center;">
+    <h3>关于村庄</h3>
+    <p>Karya Sari 村是位于巴厘岛乡村的旅游村。这里有广阔的绿色稻田、新鲜的空气和宁静的生活，是寻求安宁与真实体验游客的理想目的地。</p>
+  </div>
+  <img src="/static/img/Sawah Desa.jpg" alt="村庄稻田" style="flex: 1 1 300px; max-width: 400px; border-radius: 12px; margin: 20px;">
+</section>
+
+<section class="profil-section" style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; margin-bottom: 40px; background: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px; cursor:pointer;" onclick="window.location.href='/aktivitas_wisata_cn'">
+  <div class="profil-text" style="flex: 1 1 400px; max-width: 600px; text-align: center;">
+    <h3>旅游活动</h3>
+    <p>游客可以在稻田美景中用餐，体验竹编工艺，并与当地居民一起参与棕榈糖和亚答子的制作过程。</p>
+  </div>
+  <img src="/static/img/Aktivitas Wisata.jpg" alt="旅游活动" style="flex: 1 1 300px; max-width: 400px; border-radius: 12px; margin: 20px;">
+</section>
+
+<section class="profil-section" style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; background: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px; cursor:pointer;" onclick="window.location.href='{{ url_for('pelestarian_budaya_cn') }}'">
+  <div class="profil-text" style="flex: 1 1 400px; max-width: 600px; text-align: center;">
+    <h3>文化保护</h3>
+    <p>如 Maturan Alit 和 Nuanan Gambuh 等传统仪式代代相传，至今仍被保留。村庄也致力于发展可持续和环保的旅游业。</p>
+  </div>
+  <img src="/static/img/Maturan Alit.jpg" alt="文化保护" style="flex: 1 1 300px; max-width: 400px; border-radius: 12px; margin: 20px;">
+</section>
+
+{% endblock %}

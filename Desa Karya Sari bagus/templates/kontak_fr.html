@@ -1,0 +1,49 @@
+{% extends "base_fr.html" %}
+{% block content %}
+
+<section class="section-title" style="border-radius: 20px;">
+  <h2>Contactez-nous</h2>
+  <p>Pour plus d’informations sur le tourisme, les visites ou une collaboration avec le village de Karya Sari, veuillez nous contacter via les moyens suivants :</p>
+</section>
+
+<section class="profil-section" style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 20px; border-radius: 20px;">
+  <div class="profil-text" style="flex: 1 1 45%; max-width: 500px; text-align: center; margin: 0 auto;">
+    <h3>Adresse</h3>
+    <p>Jalan Raya Karya Sari No. 88<br>Village de Karya Sari, District Harmoni, Bali</p>
+
+    <h3>Téléphone / WhatsApp</h3>
+    <p>+62 812 3456 7890</p>
+
+    <h3>Email</h3>
+    <p>staff@desakaryasari.com</p>
+
+    <h3>Réseaux sociaux</h3>
+    <p>
+      Instagram : <a href="https://instagram.com/desakaryasari" target="_blank">@desakaryasari</a><br>
+      Facebook : <a href="https://facebook.com/desakaryasari" target="_blank">Village Karya Sari</a>
+    </p>
+  </div>
+
+  <div class="profil-text" style="flex: 1 1 45%; max-width: 500px;">
+    <h3 style="text-align: center;">Formulaire de contact</h3>
+    <form method="POST" action="/kirim-pesan">
+      <div class="mb-3">
+        <label for="nama" class="form-label">Nom :</label>
+        <input type="text" class="form-control" id="nama" name="nama" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email :</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="pesan" class="form-label">Message :</label>
+        <textarea class="form-control" id="pesan" name="pesan" rows="5" required></textarea>
+      </div>
+      <div class="text-end">
+        <button type="submit" class="btn btn-success">Envoyer le message</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+{% endblock %}
